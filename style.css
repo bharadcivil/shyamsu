@@ -1,0 +1,108 @@
+:root{
+  --paper:#f6f1ea;
+  --ink:#2b2420;
+  --fade:#6e6257;
+  --rust:#a8553a;
+  --rule:#d8cdbf;
+  box-sizing:border-box;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:1.25rem;
+  line-height:1.65;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+
+section{
+  max-width:38rem;
+  margin:0 auto;
+  padding:4rem 1.5rem;
+}
+
+.hero{text-align:center;padding-top:5rem}
+.date{
+  color:var(--rust);
+  font-style:italic;
+  margin:0 0 1.5rem;
+  font-size:1.05rem;
+}
+.hero h1{
+  font-size:clamp(2.6rem,9vw,4rem);
+  font-weight:600;
+  margin:0 0 1.5rem;
+}
+.lede{
+  font-size:1.4rem;
+  font-style:italic;
+  color:var(--fade);
+  max-width:28rem;
+  margin:0 auto;
+}
+
+.story{
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+}
+.entry{
+  padding:1.75rem 0;
+}
+.entry + .entry{
+  border-top:1px solid var(--rule);
+}
+.when{
+  display:block;
+  color:var(--rust);
+  font-style:italic;
+  font-size:1.05rem;
+  margin-bottom:.4rem;
+}
+.entry p{margin:0}
+
+.apology h2{
+  font-size:1.9rem;
+  font-weight:600;
+  margin:0 0 1.75rem;
+}
+.apology p{margin:0 0 1.25rem}
+.apology .line{
+  font-style:italic;
+  font-size:1.5rem;
+  color:var(--rust);
+  margin-top:2rem;
+}
+
+.ask{
+  text-align:center;
+  padding-bottom:6rem;
+}
+.big{
+  font-size:clamp(1.6rem,5vw,2.1rem);
+  font-style:italic;
+  margin:0 0 1.5rem;
+}
+.small{
+  color:var(--fade);
+  margin:0 0 2.5rem;
+}
+.signature{
+  margin:2rem 0 0;
+  font-style:italic;
+  color:var(--fade);
+}
+.ta{
+  font-family:"Noto Serif Tamil","Cormorant Garamond",serif;
+  font-size:1.8rem;
+  font-weight:600;
+  color:var(--rust);
+  margin:0;
+}
+
+@media (max-width:480px){
+  section{padding:3rem 1.25rem}
+}
